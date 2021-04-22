@@ -16,7 +16,7 @@ export default function Cards({
         <Grid item component={Card} xs={12} md={3} className="card infected">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Infected
+              INFECTED
             </Typography>
             <Typography variant="h5" gutterBottom>
               <CountUp
@@ -37,7 +37,7 @@ export default function Cards({
         <Grid item component={Card} xs={12} md={3} className="card recovered">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Recovered
+              RECOVERED
             </Typography>
             <Typography variant="h5" gutterBottom>
               <CountUp
@@ -58,7 +58,7 @@ export default function Cards({
         <Grid item component={Card} xs={12} md={3} className="card deaths">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Infected
+              DEATHS
             </Typography>
             <Typography variant="h5" gutterBottom>
               <CountUp
