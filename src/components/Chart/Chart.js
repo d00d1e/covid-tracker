@@ -15,7 +15,7 @@ export default function Chart({
     };
     // console.log(dailyData);
     fetchAPI();
-  });
+  }, []);
 
   //LineChart
   const lineChart = dailyData.length ? (
@@ -67,5 +67,7 @@ export default function Chart({
     />
   ) : null;
 
-  return <div className="container">{country ? barChart : lineChart}</div>;
+  return (
+    <div className="chart-container">{country ? barChart : lineChart}</div>
+  );
 }

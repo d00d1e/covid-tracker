@@ -11,7 +11,7 @@ export default function Cards({
   }
 
   return (
-    <div className="container">
+    <div className="card-container">
       <Grid container space={3} justify="center">
         <Grid item component={Card} xs={12} md={3} className="card infected">
           <CardContent>
@@ -50,9 +50,7 @@ export default function Cards({
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">
-              Number of recoveries from COVID
-            </Typography>
+            <Typography variant="body2">Number of COVID recoveries</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card deaths">

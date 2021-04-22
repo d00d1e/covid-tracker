@@ -31,7 +31,9 @@ export default class App extends Component {
     return (
       <div>
         <div className="container">
-          <h1>C🦠VID-19 Tracker</h1>
+          <h1>
+            C<span>🦠</span>VID-19 Tracker
+          </h1>
           <Cards data={data} />
           <CountryPicker handleCountryChange={this.handleCountryChange} />
           <Chart data={data} country={country} />
